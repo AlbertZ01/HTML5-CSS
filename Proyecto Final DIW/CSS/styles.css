@@ -1,3 +1,25 @@
+#menu {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo {
+  width: 30%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#nombre {
+  width: 40%;
+}
+
+#navegacion {
+  width: 30%;
+}
+
 .carousel {
   margin: 0 auto;
   padding: 20px 0;
@@ -7,29 +29,26 @@
 }
 
 .card {
-  width: 200px;
+  width: 6vw;
   color: white;
   border-radius: 24px;
   box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 20px 0;
   font-size: xx-large;
   justify-content: center;
   align-items: center;
-  min-height: 250px;
+  min-height: 10vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.carousel > * {
-  flex: 0 0 100%;
-}
-
 .group {
   display: flex;
+  justify-content: space-between;
   gap: 1vw;
-  padding-right: 15px;
+  padding-right: 1vw;
   will-change: transform;
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 20s linear infinite;
 }
 .group > :nth-child(1) {
   background-image: url("../RECURSOS/imagen1.jpg");
@@ -60,6 +79,36 @@
 }
 .group > :nth-child(10) {
   background-image: url("../RECURSOS/imagen10.jpg");
+}
+.group > :nth-child(11) {
+  background-image: url("../RECURSOS/imagen11.jpg");
+}
+.group > :nth-child(12) {
+  background-image: url("../RECURSOS/imagen12.jpg");
+}
+.group > :nth-child(13) {
+  background-image: url("../RECURSOS/imagen13.jpg");
+}
+.group > :nth-child(14) {
+  background-image: url("../RECURSOS/imagen14.jpg");
+}
+.group > :nth-child(15) {
+  background-image: url("../RECURSOS/imagen15.jpg");
+}
+.group > :nth-child(16) {
+  background-image: url("../RECURSOS/imagen16.jpg");
+}
+.group > :nth-child(17) {
+  background-image: url("../RECURSOS/imagen17.jpg");
+}
+.group > :nth-child(18) {
+  background-image: url("../RECURSOS/imagen18.jpg");
+}
+.group > :nth-child(19) {
+  background-image: url("../RECURSOS/imagen19.jpg");
+}
+.group > :nth-child(20) {
+  background-image: url("../RECURSOS/imagen20.jpg");
 }
 
 @keyframes scrolling {

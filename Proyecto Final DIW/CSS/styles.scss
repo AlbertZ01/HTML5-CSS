@@ -1,61 +1,79 @@
+#menu {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+#logo {
+  width: 30%;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#nombre {
+  width: 40%;
+}
+
+#navegacion {
+  width: 30%;
+}
+
 .carousel {
-    margin: 0 auto;
-    padding: 20px 0;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-  }
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+}
 
-  .card {
-    width: 200px;
-    color: white;
-    border-radius: 24px;
-    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+.card {
+  width: 6vw;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-    font-size: xx-large;
-    justify-content: center;
-    align-items: center;
-    min-height: 250px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-  }
-  .carousel {
-    > * {
-      flex: 0 0 100%;
-    }
-  }
-  .group {
-    display: flex;
-    // justify-content: space-between;
-    gap: 1vw;
-    padding-right: 15px;
-    will-change: transform;
-    animation: scrolling 10s linear infinite;
+.group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  padding-right: 1vw;
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
 
- 
+
   // Número máximo de fondos que puedes usar
-  $numero-de-fondos: 10; // Cambia este valor según la cantidad máxima de fondos disponibles
- 
+  $numero-de-fondos: 20; // Cambia este valor según la cantidad máxima de fondos disponibles
+
   // Generamos los fondos dinámicamente
   @for $i from 1 through $numero-de-fondos {
-    & > :nth-child(#{$i}) {
+    &> :nth-child(#{$i}) {
       background-image: url("../RECURSOS/imagen#{$i}.jpg");
     }
   }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
   }
 
-  @keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
   }
-  .carousel {
-    &:hover .group {
-      animation-play-state: paused;
-    }
+}
+
+.carousel {
+  &:hover .group {
+    animation-play-state: paused;
   }
+}
