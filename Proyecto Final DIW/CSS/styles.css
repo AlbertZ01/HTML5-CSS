@@ -1,0 +1,77 @@
+.carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.card {
+  width: 200px;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 20px 0;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel > * {
+  flex: 0 0 100%;
+}
+
+.group {
+  display: flex;
+  gap: 1vw;
+  padding-right: 15px;
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+}
+.group > :nth-child(1) {
+  background-image: url("../RECURSOS/imagen1.jpg");
+}
+.group > :nth-child(2) {
+  background-image: url("../RECURSOS/imagen2.jpg");
+}
+.group > :nth-child(3) {
+  background-image: url("../RECURSOS/imagen3.jpg");
+}
+.group > :nth-child(4) {
+  background-image: url("../RECURSOS/imagen4.jpg");
+}
+.group > :nth-child(5) {
+  background-image: url("../RECURSOS/imagen5.jpg");
+}
+.group > :nth-child(6) {
+  background-image: url("../RECURSOS/imagen6.jpg");
+}
+.group > :nth-child(7) {
+  background-image: url("../RECURSOS/imagen7.jpg");
+}
+.group > :nth-child(8) {
+  background-image: url("../RECURSOS/imagen8.jpg");
+}
+.group > :nth-child(9) {
+  background-image: url("../RECURSOS/imagen9.jpg");
+}
+.group > :nth-child(10) {
+  background-image: url("../RECURSOS/imagen10.jpg");
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+
+/*# sourceMappingURL=styles.css.map */
