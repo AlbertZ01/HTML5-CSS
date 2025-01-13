@@ -1,4 +1,266 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+  /* FUENTE ROBOTO PARA TODO EL SITIO */
+  margin: 0;
+  /* QUITAMOS LOS MÁRGENES POR DEFECTO */
+  padding: 0;
+  /* QUITAMOS EL RELLENO POR DEFECTO */
+}
 
+p {
+  font-family: "Roboto", sans-serif;
+  /* APLICAMOS LA FUENTE ROBOTO */
+  font-weight: 300;
+  /* FUENTE LIGHT */
+  font-style: italic;
+  /* FUENTE ITALICA */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* APLICAMOS UNA SOMBRA SUAVE */
+  color: #333;
+  /* COLOR DEL TEXTO (puedes ajustarlo según el diseño) */
+  line-height: 0.7;
+  font-size: 5vw;
+  /* Tamaño relativo a la anchura de la ventana */
+}
+
+.p2 {
+  font-family: "Roboto", sans-serif;
+  /* USAMOS LA MISMA FUENTE */
+  font-weight: 100;
+  /* USAMOS EL MISMO PESO PARA MANTENERLO FINO */
+  font-style: italic;
+  /* ITALICA */
+  font-size: 3vw;
+  /* HACEMOS EL H2 MÁS PEQUEÑO EN RELACIÓN AL H1 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  /* SOMBRA SUTIL PARA H2 */
+  color: #333;
+  /* EL MISMO COLOR QUE EL H1 */
+  width: 100%;
+  /* OCUPA EL 100% DEL ANCHO DISPONIBLE */
+  text-align: center;
+  /* CENTRAR EL TEXTO */
+}
+
+.categoria-btn {
+  background-color: #D3FFB8;
+  /* Color verde claro */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  /* Hace que el botón tenga forma de cápsula */
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categoria-btn:hover {
+  background-color: #80e080;
+  /* Cambia a un verde más oscuro cuando se pasa el ratón */
+}
+
+.categoria-btn .flecha {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid black;
+  /* Crea el triángulo negro */
+  margin-left: 10px;
+  /* Espacio entre el texto y la flecha */
+}
+
+#menu {
+  display: flex;
+  /* UTILIZAMOS FLEXBOX PARA ORGANIZAR EL HEADER */
+  justify-content: space-between;
+  /* ALINEA LOS ELEMENTOS A LOS EXTREMOS */
+  align-items: center;
+  /* CENTRA VERTICALMENTE LOS ELEMENTOS */
+  padding: 1rem 5%;
+  /* MÁRGENES DE IZQUIERDA Y DERECHA */
+  margin-bottom: 0;
+  /* QUITAMOS EL MÁRGEN INFERIOR DEL HEADER */
+  height: 250px;
+  /* LIMITAMOS LA ALTURA DEL HEADER A 250px */
+  overflow: hidden;
+  /* EVITAMOS QUE EL CONTENIDO SE DESBORDE FUERA DEL HEADER */
+}
+
+#logo {
+  width: 30%;
+  /* LOGO CON UN ANCHO DEL 20% */
+  display: flex;
+  justify-content: flex-start;
+  /* ALINEA EL LOGO A LA IZQUIERDA */
+}
+
+#logo img {
+  width: 75%;
+  /* HACE QUE EL LOGO OCUPA TODO EL ANCHO DEL DIV */
+  height: 75%;
+  /* HACE QUE EL LOGO OCUPA TODO EL ALTO DEL DIV */
+  object-fit: contain;
+  /* AJUSTA EL LOGO PARA MANTENER LAS PROPORCIONES */
+}
+
+#nombre {
+  width: 40%;
+  /* EL NOMBRE OCUPA LA MITAD DEL ESPACIO */
+  text-align: center;
+  /* CENTRA EL TEXTO DEL NOMBRE */
+}
+
+#navegacion {
+  width: 30%;
+  /* EL CONTENEDOR DE LOS ICONOS OCUPA UN 30% */
+  display: flex;
+  justify-content: flex-end;
+  /* ALINEA LOS ICONOS A LA DERECHA */
+  gap: 1rem;
+  /* ESPACIO ENTRE LOS ICONOS */
+}
+
+#navegacion a {
+  text-decoration: none;
+  /* QUITAMOS EL SUBRAYADO DE LOS ENLACES */
+}
+
+.icon {
+  width: 100px;
+  /* TAMAÑO INICIAL DE LOS ICONOS */
+  height: auto;
+  transition: transform 0.3s ease;
+  /* TRANSICIÓN SUAVE AL HACER HOVER */
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  /* AUMENTA EL TAMAÑO DE LOS ICONOS AL PASAR EL RATÓN */
+}
+
+/* QUITAMOS EL MÁRGEN SUPERIOR DEL MAIN */
+main {
+  margin-top: 0;
+}
+
+/* RESPONSIVIDAD PARA DIFERENTES TAMAÑOS DE PANTALLA */
+@media (max-width: 1200px) {
+  #logo {
+    width: 15%;
+    /* LOGO MÁS PEQUEÑO EN PANTALLAS MÁS PEQUEÑAS */
+  }
+  #nombre {
+    width: 50%;
+    /* NOMBRE SIGUE CENTRADO */
+  }
+  #navegacion {
+    width: 35%;
+    /* ICONOS MÁS GRANDES EN PANTALLAS MÁS PEQUEÑAS */
+  }
+  .icon {
+    width: 75px;
+    /* TAMAÑO DE ICONO EN PANTALLAS MÁS PEQUEÑAS */
+  }
+}
+@media (max-width: 992px) {
+  #logo {
+    width: 10%;
+    /* LOGO AÚN MÁS PEQUEÑO */
+  }
+  #nombre {
+    width: 50%;
+    /* NOMBRE SIGUE CENTRADO */
+  }
+  #navegacion {
+    width: 40%;
+    /* ICONOS MÁS GRANDES EN PANTALLAS MÁS PEQUEÑAS */
+  }
+  .icon {
+    width: 50px;
+    /* TAMAÑO DE ICONO MÁS PEQUEÑO EN PANTALLAS MÁS PEQUEÑAS */
+  }
+}
+@media (max-width: 768px) {
+  #logo {
+    width: 0%;
+    /* LOGO MÁS PEQUEÑO */
+  }
+  #nombre {
+    width: 60%;
+    /* NOMBRE SIGUE CENTRADO */
+  }
+  #navegacion {
+    width: 40%;
+    /* ICONOS MÁS GRANDES EN PANTALLAS MEDIANAS */
+    gap: 0.5rem;
+    /* MENOS ESPACIO ENTRE ICONOS */
+  }
+  .icon {
+    width: 50px;
+    /* TAMAÑO DE ICONO MÁS PEQUEÑO */
+  }
+}
+@media (max-width: 576px) {
+  #logo {
+    width: 0%;
+    /* LOGO SE AJUSTA EN PANTALLAS MUY PEQUEÑAS */
+  }
+  #nombre {
+    width: 30%;
+    /* NOMBRE CENTRADO */
+  }
+  #nombre p {
+    font-size: 15px;
+  }
+  #navegacion {
+    width: 70%;
+    /* ICONOS AJUSTADOS */
+    gap: 0.5rem;
+    /* MENOS ESPACIO ENTRE ICONOS */
+  }
+  #navegacion #categorias {
+    font-size: 15px;
+  }
+  .icon {
+    width: 40px;
+    /* ICONOS MÁS PEQUEÑOS EN PANTALLAS PEQUEÑAS */
+  }
+}
+@media (max-width: 350px) {
+  #logo {
+    width: 0%;
+    /* LOGO SE AJUSTA EN PANTALLAS MUY PEQUEÑAS */
+  }
+  #nombre {
+    width: 0%;
+    /* NOMBRE CENTRADO */
+  }
+  #nombre p {
+    font-size: 0;
+  }
+  #navegacion {
+    width: 100%;
+    /* ICONOS AJUSTADOS */
+    gap: 0.5rem;
+    /* MENOS ESPACIO ENTRE ICONOS */
+  }
+  #navegacion #categorias {
+    font-size: 15px;
+  }
+  .icon {
+    width: 40px;
+    /* ICONOS MÁS PEQUEÑOS EN PANTALLAS PEQUEÑAS */
+  }
+}
 .carousel {
   margin: 0 auto;
   padding: 20px 0;
@@ -7,15 +269,80 @@
   display: flex;
 }
 
+#tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Espacio entre tarjetas */
+  padding: 1rem 5%;
+  /* Márgenes */
+}
+
+.tar {
+  flex: 0 1 calc(10% - 1rem);
+  /* Cada tarjeta ocupa 1/10 menos el espacio del gap */
+  max-width: calc(10% - 1rem);
+  /* Límite del ancho de cada tarjeta */
+  border-radius: 10px;
+  /* Bordes redondeados en el div */
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 20px 0;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Asegura que la imagen no se desborde fuera de los bordes redondeados */
+}
+
+.tar img {
+  width: 100%;
+  /* Hace que la imagen ocupe todo el div */
+  height: 100%;
+  /* Hace que la imagen ocupe todo el div */
+  object-fit: cover;
+  /* Asegura que la imagen se recorte adecuadamente y cubra todo el div */
+  border-radius: 10px;
+  /* Bordes redondeados para la imagen */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1200px) {
+  .tar {
+    flex: 0 1 calc(25% - 1rem);
+    /* 4 tarjetas por fila */
+    max-width: calc(25% - 1rem);
+  }
+}
+@media (max-width: 992px) {
+  .tar {
+    flex: 0 1 calc(33.33% - 1rem);
+    /* 3 tarjetas por fila */
+    max-width: calc(33.33% - 1rem);
+  }
+}
+@media (max-width: 768px) {
+  .tar {
+    flex: 0 1 calc(50% - 1rem);
+    /* 2 tarjetas por fila */
+    max-width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 576px) {
+  .tar {
+    flex: 0 1 calc(100% - 1rem);
+    /* 1 tarjeta por fila */
+    max-width: calc(100% - 1rem);
+  }
+}
 .card {
-  width: 200px;
+  width: 6vw;
   color: white;
   border-radius: 24px;
   box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 20px 0;
   font-size: xx-large;
   justify-content: center;
   align-items: center;
-  min-height: 250px;
+  min-height: 10vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -27,61 +354,152 @@
   gap: 1vw;
   padding-right: 1vw;
   will-change: transform;
-  animation: scrolling 10s linear infinite;
+  animation: scrolling 20s linear infinite;
 }
-
-.group> :nth-child(1) {
-  background-image: url("../RECURSOS/imagen1.jpg");
+.group > :nth-child(1) {
+  background-image: url("../RECURSOS/imagen (1).jpg");
 }
-
-.group> :nth-child(2) {
-  background-image: url("../RECURSOS/imagen2.jpg");
+.group > :nth-child(2) {
+  background-image: url("../RECURSOS/imagen (2).jpg");
 }
-
-.group> :nth-child(3) {
-  background-image: url("../RECURSOS/imagen3.jpg");
+.group > :nth-child(3) {
+  background-image: url("../RECURSOS/imagen (3).jpg");
 }
-
-.group> :nth-child(4) {
-  background-image: url("../RECURSOS/imagen4.jpg");
+.group > :nth-child(4) {
+  background-image: url("../RECURSOS/imagen (4).jpg");
 }
-
-.group> :nth-child(5) {
-  background-image: url("../RECURSOS/imagen5.jpg");
+.group > :nth-child(5) {
+  background-image: url("../RECURSOS/imagen (5).jpg");
 }
-
-.group> :nth-child(6) {
-  background-image: url("../RECURSOS/imagen6.jpg");
+.group > :nth-child(6) {
+  background-image: url("../RECURSOS/imagen (6).jpg");
 }
-
-.group> :nth-child(7) {
-  background-image: url("../RECURSOS/imagen7.jpg");
+.group > :nth-child(7) {
+  background-image: url("../RECURSOS/imagen (7).jpg");
 }
-
-.group> :nth-child(8) {
-  background-image: url("../RECURSOS/imagen8.jpg");
+.group > :nth-child(8) {
+  background-image: url("../RECURSOS/imagen (8).jpg");
 }
-
-.group> :nth-child(9) {
-  background-image: url("../RECURSOS/imagen9.jpg");
+.group > :nth-child(9) {
+  background-image: url("../RECURSOS/imagen (9).jpg");
 }
-
-.group> :nth-child(10) {
-  background-image: url("../RECURSOS/imagen10.jpg");
+.group > :nth-child(10) {
+  background-image: url("../RECURSOS/imagen (10).jpg");
+}
+.group > :nth-child(11) {
+  background-image: url("../RECURSOS/imagen (11).jpg");
+}
+.group > :nth-child(12) {
+  background-image: url("../RECURSOS/imagen (12).jpg");
+}
+.group > :nth-child(13) {
+  background-image: url("../RECURSOS/imagen (13).jpg");
+}
+.group > :nth-child(14) {
+  background-image: url("../RECURSOS/imagen (14).jpg");
+}
+.group > :nth-child(15) {
+  background-image: url("../RECURSOS/imagen (15).jpg");
+}
+.group > :nth-child(16) {
+  background-image: url("../RECURSOS/imagen (16).jpg");
+}
+.group > :nth-child(17) {
+  background-image: url("../RECURSOS/imagen (17).jpg");
+}
+.group > :nth-child(18) {
+  background-image: url("../RECURSOS/imagen (18).jpg");
+}
+.group > :nth-child(19) {
+  background-image: url("../RECURSOS/imagen (19).jpg");
+}
+.group > :nth-child(20) {
+  background-image: url("../RECURSOS/imagen (20).jpg");
 }
 
 @keyframes scrolling {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-100%);
   }
 }
-
 .carousel:hover .group {
   animation-play-state: paused;
+}
+
+#footer {
+  background-color: #f8f9fa;
+  /* Fondo claro */
+  color: #333;
+  /* Color de texto */
+  padding: 2rem;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.info-column {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.info-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.info-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-column ul li {
+  margin: 0.5rem 0;
+}
+
+.info-column ul li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-column ul li a:hover {
+  color: #0056b3;
+}
+
+.sponsors-section {
+  margin-top: 2rem;
+}
+
+.sponsors-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sponsors img {
+  max-height: 60px;
+  /* Tamaño uniforme para las imágenes */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsors img:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=styles.css.map */

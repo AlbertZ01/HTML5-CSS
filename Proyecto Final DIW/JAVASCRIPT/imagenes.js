@@ -1,12 +1,13 @@
-const main = document.getElementById('tarjetas');
+document.addEventListener('DOMContentLoaded', () => {
+  const main = document.getElementById('tarjetas');
 
+  for (let i = 1; i <= 300; i++) {
+    const img = document.createElement('img');
 
-//Crear los divs para cada imagen
-for (let i = 1; i <= 10; i++) {
-  const div = document.createElement('div')
-  div.className ='tar'
-  main.appendChild(div)
- //Carga de Imagenes:
-  div.innerHTML=`<img src=./RECURSOS/`+i+`.jpg id='idimg`+i+`' alt="imagenes"></img><div class="input-group mb-3">
-            </div>`
-}
+    img.src = `./RECURSOS/imagen (${i}).jpg`;
+    img.classList.add('tar');  // Añadimos ambas clases 'card-img-top' y 'tar'
+    img.alt = `Imagen ${i}`;
+
+    main.appendChild(img);
+  }
+});
