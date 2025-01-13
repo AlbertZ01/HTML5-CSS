@@ -10,6 +10,7 @@
 
 #logo img {
   width: 100%;
+  height: 100%;
 }
 
 #nombre {
@@ -26,6 +27,31 @@
   max-width: 100%;
   overflow: hidden;
   display: flex;
+}
+
+#tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1vw;
+  padding-right: 1vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tar {
+  width: 275px;
+  height: 200px;
+  color: white;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 20px 0;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card {
