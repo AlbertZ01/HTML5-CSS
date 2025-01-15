@@ -5,26 +5,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const img = document.createElement('img');
 
     img.src = `./RECURSOS/imagen (${i}).jpg`;
-    img.id = 'hoverImage';
-    img.classList.add('tar', 'image');  // Añadimos ambas clases 'card-img-top' y 'tar'
+    img.id = `hoverImage${i}`;
+    img.classList.add('tar', 'image');
     img.alt = `Imagen ${i}`;
-
+    img.dataset.index = i;
     main.appendChild(img);
 
-    // Crear video con clase video, id hoverVideo, y loop
-    const video = document.createElement('video');
-    video.className = 'video';
-    video.id = 'hoverVideo';
-    video.loop = true;
 
-    // Agregar etiqueta source al video
+    const a = document.createElement('a');
+
+    a.href = `./PAGINAS/pelicula${i}.html`;
+
+    img.appendChild(a);
+
+    const video = document.createElement('video');
+    video.id = `hoverVideo${i}`;
+    video.classList.add('video');
+    video.loop = true;
+    video.dataset.index = i; // Add data attribute to store index
+
     const source = document.createElement('source');
     source.src = `./RECURSOS/video (${i}).mp4`;
     source.type = 'video/mp4';
     video.appendChild(source);
 
-    // Añadir el video al contenedor "tarjetas"
-    tarjetas.appendChild(video);
+    main.appendChild(video);
   }
-
 });
