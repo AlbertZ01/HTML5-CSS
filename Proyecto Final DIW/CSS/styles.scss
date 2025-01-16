@@ -142,6 +142,10 @@ main {
   margin-top: 0;
 }
 
+.aparecer {
+  overflow: hidden;
+  display: none;
+}
 
 @media (max-width: 1200px) {
   #logo {
@@ -158,6 +162,11 @@ main {
 
   .icon {
     width: 75px;
+  }
+
+  .aparecer {
+    overflow: hidden;
+    display: none;
   }
 }
 
@@ -177,6 +186,11 @@ main {
   .icon {
     width: 50px;
   }
+
+  .aparecer {
+    overflow: hidden;
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -195,6 +209,39 @@ main {
 
   .icon {
     width: 50px;
+  }
+
+  .carousel {
+    display: hidden;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .group {
+    display: hidden;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .card {
+    display: hidden;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .desaparecer {
+    display: hidden;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .aparecer {
+    overflow: visible;
+    display: block;
+  }
+
+  .p1 {
+    margin-top: -15%;
   }
 }
 
@@ -223,6 +270,7 @@ main {
   .icon {
     width: 40px;
   }
+
 }
 
 @media (max-width: 350px) {
@@ -434,4 +482,25 @@ main {
 
 .sponsors img:hover {
   transform: scale(1.1);
+}
+
+.search-bar {
+  max-width: 500px;
+  margin: auto auto;
+}
+
+.search-bar .input-group {
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .form-control {
+  border: none;
+  padding-left: 20px;
+}
+
+.search-bar .btn {
+  border: none;
+  padding: 10px 20px;
 }

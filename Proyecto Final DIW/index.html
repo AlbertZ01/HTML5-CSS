@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <title>a&zfilms</title>
 </head>
 
@@ -31,9 +33,10 @@
                     onclick="window.location.href='pagina_de_categorias.html'">
                     Categorías <span class="flecha"></span>
                 </button>
-                <a href="/busqueda">
+                <a href="/busqueda" class="desaparecer">
                     <img src="RECURSOS/busqueda.svg" alt="Busqueda" class="icon">
                 </a>
+
                 <a href="/usuario">
                     <img src="RECURSOS/usuario.svg" alt="Usuario" class="icon">
                 </a>
@@ -41,7 +44,17 @@
         </div>
     </header>
     <main>
-        <p class="p1">En Cartelera</p>
+        <div class="container aparecer">
+            <div class="search-bar">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search" aria-describedby="search-addon">
+                    <button class="btn btn-outline-secondary" type="button" id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </button>
+                </div>
+            </div>
+        </div>
+        <p class="p1 desaparecer">En Cartelera</p>
         <div class="carousel">
             <div class="group">
                 <div class="card"></div>
