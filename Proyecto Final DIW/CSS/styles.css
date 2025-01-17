@@ -18,7 +18,7 @@ body.blurred {
 }
 
 .video {
-  display: none;
+  display: none !important;
   width: 500px;
   height: 400px;
   transition: all 0.3s ease;
@@ -27,7 +27,7 @@ body.blurred {
 }
 
 .video.active {
-  display: block;
+  display: block !important;
   width: 1000px;
   height: 800px;
   position: fixed;
@@ -81,7 +81,7 @@ p {
 }
 
 .categoria-btn .flecha {
-  display: inline-block;
+  display: inline- block !important;
   width: 0;
   height: 0;
   border-top: 5px solid transparent;
@@ -140,11 +140,15 @@ p {
 
 main {
   margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .aparecer {
   overflow: hidden;
-  display: none;
+  display: none !important;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
@@ -162,7 +166,7 @@ main {
   }
   .aparecer {
     overflow: hidden;
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 992px) {
@@ -180,7 +184,7 @@ main {
   }
   .aparecer {
     overflow: hidden;
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 768px) {
@@ -198,36 +202,50 @@ main {
     width: 50px;
   }
   .carousel {
-    display: hidden;
+    display: none !important;
     width: 0%;
     overflow: hidden;
   }
-  .group {
-    display: hidden;
+  .carousel {
+    display: none !important;
     width: 0%;
     overflow: hidden;
   }
   .card {
-    display: hidden;
+    display: none !important;
     width: 0%;
     overflow: hidden;
   }
   .desaparecer {
-    display: hidden;
+    display: none !important;
     width: 0%;
     overflow: hidden;
   }
   .aparecer {
-    overflow: visible;
-    display: block;
+    display: block !important;
+    margin-bottom: 1vh;
   }
   .p1 {
     margin-top: -15%;
+  }
+  #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    margin-bottom: 0;
+    height: 100px;
+    overflow: hidden;
   }
 }
 @media (max-width: 576px) {
   #logo {
     width: 0%;
+  }
+  .carousel {
+    display: none !important;
+    width: 0%;
+    overflow: hidden;
   }
   #nombre {
     width: 30%;
@@ -245,10 +263,28 @@ main {
   .icon {
     width: 40px;
   }
+  #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    margin-bottom: 0;
+    height: 100px;
+    overflow: hidden;
+  }
+  .aparecer {
+    display: block !important;
+    margin-bottom: 1vh;
+  }
 }
 @media (max-width: 350px) {
   #logo {
     width: 0%;
+  }
+  .carousel, .card, .group {
+    display: none !important;
+    width: 0%;
+    overflow: hidden;
   }
   #nombre {
     width: 0%;
@@ -265,6 +301,10 @@ main {
   }
   .icon {
     width: 40px;
+  }
+  .aparecer {
+    display: block !important;
+    margin-bottom: 1vh;
   }
 }
 .carousel {
@@ -322,8 +362,8 @@ main {
 }
 @media (max-width: 576px) {
   .tar {
-    flex: 0 1 calc(100% - 1rem);
-    max-width: calc(100% - 1rem);
+    flex: 0 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
   }
 }
 .card {
