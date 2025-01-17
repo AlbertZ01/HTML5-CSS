@@ -1,7 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", sans-serif !important;
 }
 
 body {
@@ -47,6 +45,7 @@ p {
   color: #333;
   line-height: 0.7;
   font-size: 5vw;
+  margin-bottom: 0% !important;
 }
 
 .p2 {
@@ -63,7 +62,7 @@ p {
 .categoria-btn {
   background-color: #D3FFB8;
   border: none;
-  padding: 10px 20px;
+  padding: 1px 20px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -95,25 +94,23 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5%;
-  margin-bottom: 0;
-  height: 250px;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  height: 100px;
   overflow: hidden;
 }
 
 #logo {
   width: 30%;
   display: flex;
-  justify-content: flex-start;
 }
 
 #logo img {
-  width: 75%;
-  height: 75%;
-  object-fit: contain;
+  width: 30%;
+  height: 30%;
 }
 
 #nombre {
-  width: 40%;
   text-align: center;
 }
 
@@ -206,11 +203,6 @@ main {
     width: 0%;
     overflow: hidden;
   }
-  .carousel {
-    display: none !important;
-    width: 0%;
-    overflow: hidden;
-  }
   .card {
     display: none !important;
     width: 0%;
@@ -226,7 +218,8 @@ main {
     margin-bottom: 1vh;
   }
   .p1 {
-    margin-top: -15%;
+    margin-top: 2%;
+    margin-bottom: 0% !important;
   }
   #menu {
     display: flex;
@@ -295,9 +288,6 @@ main {
   #navegacion {
     width: 100%;
     gap: 0.5rem;
-  }
-  #navegacion #categorias {
-    font-size: 15px;
   }
   .icon {
     width: 40px;
