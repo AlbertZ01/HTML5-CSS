@@ -1,0 +1,62 @@
+{
+    "pelicula1": {
+        "header": {
+        "title": "Película 1: La Aventura Comienza",
+        "icons": [
+          "icono-like.png",
+          "icono-share.png"
+        ]
+      },
+      "body": {
+        "title": "Reseña de La Aventura Comienza",
+        "description": "Una emocionante historia de aventura y descubrimiento, donde los protagonistas deben superar desafíos inesperados. Este texto es más largo y debe mostrarse parcialmente.",
+        "videos_and_images": [
+          "../RECURSOS/imagen (1).jpg",
+          "../RECURSOS/video (1).mp4",
+          "../RECURSOS/imagen (1-1).jpg",
+          "../RECURSOS/video (1-1).mp4"
+        ],
+        "comments": [
+          {
+            "user": "Juan Pérez",
+            "comment": "Me encantó la trama, especialmente los giros inesperados."
+          },
+          {
+            "user": "María López",
+            "comment": "Una película que vale la pena ver más de una vez."
+          },
+          {
+            "user": "José Felipe",
+            "comment": "Madre mia no entiendo como puede ser tan buena esta peli 😁👌."
+          },
+          {
+            "user": "Ramón Ramirez",
+            "comment": "El mejor actor de todos los tiempos (No dire cual jeje)."
+          },
+          {
+            "user": "Silvia Perez",
+            "comment": "No me gusto la pelicula la verdad."
+          },
+          {
+            "user": "Luis Merengue",
+            "comment": "Mira mamá salgo en los comentarios!!."
+          }
+        ],
+        "links": [
+          {
+            "text": "Ver tráiler",
+            "url": "https://trailer-pelicula1.com"
+          },
+          {
+            "text": "Comprar entradas",
+            "url": "https://entradas-pelicula1.com"
+          },
+          {
+            "text": "Más información",
+            "url": "https://info-pelicula1.com"
+          }
+        ]
+      }
+    }
+  }
+  

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Páginas de Películas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      margin-bottom: 1vh;
+      margin-top: 1vh;
+      height: 100px;
+      overflow: hidden;
+    }
+    #logo {
+      width: 30%;
+      display: flex;
+    }
+    #logo img {
+      width: 20%;
+      height: 20%;
+    }
+    #nombre {
+      text-align: center;
+    }
+    #navegacion {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+    }
+    #navegacion a {
+      text-decoration: none;
+    }
+    .icon {
+      width: 100px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    @media (max-width: 1200px) {
+      #nombre {
+        width: 50%;
+      }
+      #navegacion {
+        width: 35%;
+      }
+      .icon {
+        width: 75px;
+      }
+      .aparecer {
+        overflow: hidden;
+        display: none !important;
+      }
+    }
+    @media (max-width: 992px) {
+      #nombre {
+        width: 50%;
+      }
+      #navegacion {
+        width: 40%;
+      }
+      .icon {
+        width: 50px;
+      }
+      .aparecer {
+        overflow: hidden;
+        display: none !important;
+      }
+    }
+    @media (max-width: 768px) {
+      #logo {
+        width: 0%;
+      }
+      #nombre {
+        width: 60%;
+      }
+      #navegacion {
+        width: 40%;
+        gap: 0.5rem;
+      }
+      .icon {
+        width: 50px;
+      }
+      .carousel {
+        display: none !important;
+        width: 0%;
+        overflow: hidden;
+      }
+      .card {
+        display: none !important;
+        width: 0%;
+        overflow: hidden;
+      }
+      .desaparecer {
+        display: none !important;
+        width: 0%;
+        overflow: hidden;
+      }
+      .aparecer {
+        display: block !important;
+      }
+      .p1 {
+        margin-top: 2%;
+        margin-bottom: 0% !important;
+      }
+      #menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        margin-bottom: 0;
+        height: 100px;
+        overflow: hidden;
+      }
+    }
+    @media (max-width: 576px) {
+      #logo {
+        width: 0%;
+      }
+      .carousel {
+        display: none !important;
+        width: 0%;
+        overflow: hidden;
+      }
+      #nombre {
+        width: 30%;
+      }
+      #nombre p {
+        font-size: 15px;
+      }
+      #navegacion {
+        width: 70%;
+        gap: 0.5rem;
+      }
+      #navegacion #categorias {
+        font-size: 15px;
+      }
+      .icon {
+        width: 40px;
+      }
+      #menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+        margin-bottom: 0;
+        height: 100px;
+        overflow: hidden;
+      }
+      .aparecer {
+        display: block !important;
+        margin-bottom: 1vh;
+      }
+    }
+    @media (max-width: 350px) {
+      #logo {
+        width: 0%;
+      }
+      .carousel, .card, .group {
+        display: none !important;
+        width: 0%;
+        overflow: hidden;
+      }
+      #nombre {
+        width: 0%;
+      }
+      #nombre p {
+        font-size: 0;
+      }
+      #navegacion {
+        width: 100%;
+        gap: 0.5rem;
+      }
+      .icon {
+        width: 40px;
+      }
+      .aparecer {
+        display: block !important;
+        margin-bottom: 1vh;
+      }
+    }
+    .icon:hover {
+      transform: scale(1.2);
+    }
+    #content {
+      padding: 20px;
+    }
+    .links a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    .carousel img, .carousel video {
+      width: 100%;
+      display: block;
+    }
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .carousel-buttons button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .comments-carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .comments-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .comment-item {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .comment-item strong {
+      font-weight: bold;
+    }
+    .comment-section form {
+      display: flex;
+      flex-direction: column;
+    }
+    .comment-section label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .comment-section input, .comment-section textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+      max-width: 500px;
+    }
+    .comment-section button {
+      width: 150px;
+      padding: 10px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .comment-section button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header style="display: none;">
+    <img id="headerImage" src="" alt="Imagen de la película">
+    <div class="icons">
+      <img id="icon1" src="" alt="Ícono 1">
+      <img id="icon2" src="" alt="Ícono 2">
+    </div>
+  </header>
+  <header>
+    <div id="menu">
+        <div id="logo">
+            <img src="RECURSOS/logo2.png" alt="Logo" id="logo-recurso" onclick="window.location.href='index.html'" style="cursor: pointer;">
+        </div>
+        <div id="nombre">
+            <p>A&Z Films</p>
+            <p class="p2">Watch Everywhere</p>
+        </div>
+        <div id="navegacion">
+            <a href="/busqueda" class="desaparecer">
+                <img src="RECURSOS/busqueda.svg" alt="Busqueda" class="icon">
+            </a>
+
+            <a href="/usuario">
+                <img src="RECURSOS/usuario.svg" alt="Usuario" class="icon">
+            </a>
+        </div>
+    </div>
+  </header>
+  <h1 id="headerTitle"></h1>
+  <div class="links" id="navLinks" style="display: none;"></div>
+  <div id="content"></div>
+  <script>
+    const moviesData = {
+      "pages": {
+        "pelicula1": {
+          "header": { "image": "imagen (1).jpg", "title": "Película 1: La Aventura Comienza", "icons": ["icono-like.png", "icono-share.png"] },
+          "body": {
+            "title": "Reseña de La Aventura Comienza",
+            "description": "Una emocionante historia de aventura y descubrimiento, donde los protagonistas deben superar desafíos inesperados. Este texto es más largo y debe mostrarse parcialmente.",
+            "videos_and_images": [
+              "imagen (1).jpg",
+              "video (1).mp4",
+              "imagen (1-1).jpg",
+              "video (1-1).mp4"
+            ],
+            "comments": [
+              { "user": "Juan Pérez", "comment": "Me encantó la trama, especialmente los giros inesperados." },
+              { "user": "María López", "comment": "Una película que vale la pena ver más de una vez." },
+              { "user": "José Felipe", "comment": "Madre mia no entiendo como puede ser tan buena esta peli 😁👌." },
+              { "user": "Ramón Ramirez", "comment": "El mejor actor de todos los tiempos (No dire cual jeje)." },
+              { "user": "Silvia Perez", "comment": "No me gusto la pelicula la verdad." },
+              { "user": "Luis Merengue", "comment": "Mira mamá salgo en los comentarios!!." }
+            ],
+            "links": [
+              { "text": "Ver tráiler", "url": "https://trailer-pelicula1.com" },
+              { "text": "Comprar entradas", "url": "https://entradas-pelicula1.com" },
+              { "text": "Más información", "url": "https://info-pelicula1.com" }
+            ]
+          }
+        },
+        "pelicula2": {
+          "header": { "image": "imagen (1).jpg", "title": "Película 1: La Aventura Comienza", "icons": ["icono-like.png", "icono-share.png"] },
+          "body": {
+            "title": "RBBBBa",
+            "description": "Una emocionante historia de aventura y descubrimiento, donde los protagonistas deben superar desafíos inesperados. Este texto es más largo y debe mostrarse parcialmente.",
+            "videos_and_images": [
+              "imagen (1).jpg",
+              "video (1).mp4",
+              "imagen (1-1).jpg",
+              "video (1-1).mp4"
+            ],
+            "comments": [
+              { "user": "Juan Pérez", "comment": "Me encantó la trama, especialmente los giros inesperados." },
+              { "user": "María López", "comment": "Una película que vale la pena ver más de una vez." },
+              { "user": "José Felipe", "comment": "Madre mia no entiendo como puede ser tan buena esta peli 😁👌." },
+              { "user": "Ramón Ramirez", "comment": "El mejor actor de todos los tiempos (No dire cual jeje)." },
+              { "user": "Silvia Perez", "comment": "No me gusto la pelicula la verdad." },
+              { "user": "Luis Merengue", "comment": "Mira mamá salgo en los comentarios!!." }
+            ],
+            "links": [
+              { "text": "Ver tráiler", "url": "https://trailer-pelicula1.com" },
+              { "text": "Comprar entradas", "url": "https://entradas-pelicula1.com" },
+              { "text": "Más información", "url": "https://info-pelicula1.com" }
+            ]
+          }
+        },
+        "pelicula3": {
+          "header": { "image": "imagen (1).jpg", "title": "Película 1: La Aventura Comienza", "icons": ["icono-like.png", "icono-share.png"] },
+          "body": {
+            "title": "RAAAA",
+            "description": "Una emocionante historia de aventura y descubrimiento, donde los protagonistas deben superar desafíos inesperados. Este texto es más largo y debe mostrarse parcialmente.",
+            "videos_and_images": [
+              "imagen (1).jpg",
+              "video (1).mp4",
+              "imagen (1-1).jpg",
+              "video (1-1).mp4"
+            ],
+            "comments": [
+              { "user": "Juan Pérez", "comment": "Me encantó la trama, especialmente los giros inesperados." },
+              { "user": "María López", "comment": "Una película que vale la pena ver más de una vez." },
+              { "user": "José Felipe", "comment": "Madre mia no entiendo como puede ser tan buena esta peli 😁👌." },
+              { "user": "Ramón Ramirez", "comment": "El mejor actor de todos los tiempos (No dire cual jeje)." },
+              { "user": "Silvia Perez", "comment": "No me gusto la pelicula la verdad." },
+              { "user": "Luis Merengue", "comment": "Mira mamá salgo en los comentarios!!." }
+            ],
+            "links": [
+              { "text": "Ver tráiler", "url": "https://trailer-pelicula1.com" },
+              { "text": "Comprar entradas", "url": "https://entradas-pelicula1.com" },
+              { "text": "Más información", "url": "https://info-pelicula1.com" }
+            ]
+          }
+        }
+        // Agregar más películas aquí
+      }
+    };
+
+    const headerImage = document.getElementById('headerImage');
+    const headerTitle = document.getElementById('headerTitle');
+    const navLinks = document.getElementById('navLinks');
+    const content = document.getElementById('content');
+
+    // Renderizar los enlaces de navegación
+    Object.keys(moviesData.pages).forEach(pageKey => {
+      const page = moviesData.pages[pageKey];
+      if (window.location.hash !== `#${pageKey}`) {
+        const link = document.createElement('a');
+        link.textContent = page.header.title;
+        link.href = `#${pageKey}`;
+        link.addEventListener('click', () => renderPage(pageKey));
+        navLinks.appendChild(link);
+      }
+    });
+
+    function renderPage(pageKey) {
+      const page = moviesData.pages[pageKey];
+      if (!page) return;
+
+      headerImage.src = page.header.image;
+      headerTitle.textContent = page.header.title;
+
+      const description = page.body.description;
+      const shortDescription = description.slice(0, 100) + '...';
+
+      content.innerHTML = ` 
+        <h2>${page.body.title}</h2>
+        <p id="description">${shortDescription}</p>
+        <button id="viewMore">Ver más</button>
+        <div class="carousel" id="carousel-images">
+          <div class="carousel-track">
+            ${page.body.videos_and_images.map(item => {
+              if (item.endsWith('.mp4')) {
+                return `<div class="carousel-item"><video controls src="${item}"></video></div>`; 
+              } else {
+                return `<div class="carousel-item"><img src="${item}" alt="Imagen"></div>`;
+              }
+            }).join('')}
+          </div>
+          <div class="carousel-buttons">
+            <button id="prevButton">&lt;</button>
+            <button id="nextButton">&gt;</button>
+          </div>
+        </div>
+        <div class="comments-carousel">
+          <div class="comments-track">
+            ${page.body.comments.map(c => `<div class="comment-item"><strong>${c.user}</strong>: ${c.comment}</div>`).join('')}
+          </div>
+        </div>
+        <div class="links">
+          ${page.body.links.map(link => `<a href="${link.url}" target="_blank">${link.text}</a>`).join('')}
+        </div>
+        <div class="comment-section">
+          <h3>Agregar Reseña</h3>
+          <form id="reviewForm">
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <button type="submit">Enviar Reseña</button>
+          </form>
+        </div>
+      `;
+
+      // Mostrar el texto completo en la descripción
+      document.getElementById('viewMore').addEventListener('click', () => {
+        document.getElementById('description').textContent = description;
+      });
+
+      // Lógica del carrusel de imágenes y videos
+      const carouselTrack = document.querySelector('#carousel-images .carousel-track');
+      const carouselItems = Array.from(carouselTrack.children);
+      let currentImageIndex = 0;
+
+      function moveToNextImage() {
+        currentImageIndex = (currentImageIndex < carouselItems.length - 1) ? currentImageIndex + 1 : 0;
+        carouselTrack.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+      }
+
+      document.getElementById('nextButton').addEventListener('click', moveToNextImage);
+      document.getElementById('prevButton').addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : carouselItems.length - 1;
+        carouselTrack.style.transform = `translateX(-${currentImageIndex * 100}%)`;
+      });
+
+      // Lógica del carrusel de comentarios
+      const commentsTrack = document.querySelector('.comments-track');
+      const commentItems = Array.from(commentsTrack.children);
+      let currentCommentIndex = 0;
+
+      function moveToNextComment() {
+        currentCommentIndex = (currentCommentIndex < commentItems.length - 1) ? currentCommentIndex + 1 : 0;
+        commentsTrack.style.transform = `translateX(-${currentCommentIndex * 100}%)`;
+      }
+
+      setInterval(moveToNextComment, 1000); // Mueve el carrusel de comentarios cada 1 segundo
+
+      // Add review submission functionality
+      document.getElementById('reviewForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const username = document.getElementById('username').value;
+        const comment = document.getElementById('comment').value;
+
+        // Add the new review to the movie's comments
+        page.body.comments.push({ user: username, comment: comment });
+
+        // Re-render the page to display the updated comments
+        renderPage(pageKey);
+      });
+    }
+
+    renderPage('pelicula1');
+  </script>
+</body>
+</html>

@@ -43,8 +43,8 @@ p {
   font-style: italic;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   color: #333;
-  line-height: 0.7;
-  font-size: 5vw;
+  line-height: 0.9;
+  font-size: 4vh;
   margin-bottom: 0% !important;
 }
 
@@ -52,7 +52,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: italic;
-  font-size: 3vw;
+  font-size: 3vh;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   color: #333;
   width: 100%;
@@ -73,6 +73,7 @@ p {
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  min-height: 4vh;
 }
 
 .categoria-btn:hover {
@@ -106,8 +107,8 @@ p {
 }
 
 #logo img {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
 }
 
 #nombre {
@@ -149,9 +150,6 @@ main {
 }
 
 @media (max-width: 1200px) {
-  #logo {
-    width: 15%;
-  }
   #nombre {
     width: 50%;
   }
@@ -167,9 +165,6 @@ main {
   }
 }
 @media (max-width: 992px) {
-  #logo {
-    width: 10%;
-  }
   #nombre {
     width: 50%;
   }
@@ -215,7 +210,6 @@ main {
   }
   .aparecer {
     display: block !important;
-    margin-bottom: 1vh;
   }
   .p1 {
     margin-top: 2%;
@@ -526,6 +520,7 @@ main {
 .search-bar {
   max-width: 500px;
   margin: auto auto;
+  padding: 2vh;
 }
 
 .search-bar .input-group {
