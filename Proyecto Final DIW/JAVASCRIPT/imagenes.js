@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlayVideo.src = `./RECURSOS/video (${i}).mp4`;
         overlayVideo.play();
         videoOverlay.style.display = 'flex';
-      }, 5000); // Retraso de 5 segundos
+      }, 1500); // Retraso de 5 segundos
     });
 
     img.addEventListener('mouseleave', () => {

@@ -9,7 +9,7 @@
       },
       "body": {
         "title": "Reseña de La Aventura Comienza",
-        "description": "Una emocionante historia de aventura y descubrimiento, donde los protagonistas deben superar desafíos inesperados. Este texto es más largo y debe mostrarse parcialmente.",
+        "description":"Una emocionante historia de aventura y descubrimiento, donde los protagonistas deben superar desafíos inesperados. Este texto es más largo y debe mostrarse parcialmente.",
         "videos_and_images": [
           "../RECURSOS/imagen (1).jpg",
           "../RECURSOS/video (1).mp4",

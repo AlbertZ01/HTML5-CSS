@@ -30,11 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Contenedor "peliculaDetails" no encontrado en el DOM');
             return;
           }
-          
-          // Crear y mostrar el encabezado (header)
-          const titleHeader = document.createElement('h1');
-          titleHeader.textContent = pelicula.header.title;
-
           const image = document.createElement('img');
           if (pelicula.header.image) { // Verificar si la imagen está definida
             image.src = pelicula.header.image;
@@ -42,6 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             console.warn('Imagen no definida para el encabezado');
           }
+          // Crear y mostrar el encabezado (header)
+          const titleHeader = document.createElement('h1');
+          titleHeader.textContent = pelicula.header.title;
 
           // Crear y mostrar el cuerpo (body)
           const titleBody = document.createElement('h2');
@@ -118,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             user.textContent = comment.user;
             const commentText = document.createElement('p');
             commentText.textContent = comment.comment;
+            // commentText.classList.add('p1');
             commentElement.appendChild(user);
             commentElement.appendChild(commentText);
             commentsContainer.appendChild(commentElement);
