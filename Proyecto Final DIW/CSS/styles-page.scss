@@ -357,11 +357,12 @@ body {
   .carousel-wrapper {
     display: flex;
     transition: transform 0.5s ease;
-    width: 100%;
+    width: 50%;
     justify-content: center;
   }
   
   .carousel-item {
+
     display: none;
     width: 100%;
     object-fit: contain;

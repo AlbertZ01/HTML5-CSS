@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
           titleHeader.textContent = pelicula.header.title;
 
           // Crear y mostrar el cuerpo (body)
+          // const descriptionContainer = document.createElement('div');
           const titleBody = document.createElement('h2');
           titleBody.textContent = pelicula.body.title;
 

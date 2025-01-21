@@ -398,8 +398,9 @@ body {
 .carousel-wrapper {
   display: flex;
   transition: transform 0.5s ease;
-  width: 100%;
+  width: 50%;
   justify-content: center;
+  float: right;
 }
 
 .carousel-item {

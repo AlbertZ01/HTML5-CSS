@@ -215,6 +215,7 @@ main {
     display: none !important;
     width: 0%;
     overflow: hidden;
+    cursor: pointer;
   }
 
   .desaparecer {
@@ -396,6 +397,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .group {
