@@ -1,0 +1,506 @@
+{
+  "pelicula1": {
+    "nombre": "Piratas del Caribe",
+    "descripcion": "El capitán Barbossa le roba el barco al pirata Jack Sparrow y secuestra a Elizabeth, amiga de Will Turner. Barbossa y su tripulación son víctimas de un conjuro que los condena a vivir eternamente y a transformarse cada noche en esqueletos vivientes. Fecha de estreno: 14 de agosto de 2003 (España)\n \n Director: Gore Verbinski\nSecuela: Pirates of the Caribbean: Dead Man's Chest\nHistoria de: Ted Elliott, Terry Rossio, Walt Disney, Stuart Beattie, Jay Wolpert\nPresupuesto: 140 millones USD",
+    "reseñas": [
+      {
+        "usuario": "Juan99",
+        "comentario": "Una obra maestra del cine moderno. Me dejó reflexionando durante días.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "Ana12",
+        "comentario": "Increíble dirección y efectos visuales. Arrr!",
+        "valoracion": 4
+      },
+      {
+        "usuario": "LuisN",
+        "comentario": "La trama es compleja pero fascinante. Definitivamente una película que hay que ver más de una vez.",
+        "valoracion": 5
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (1).jpg",
+      "../RECURSOS/imagen (1-1).jpg",
+      "../RECURSOS/imagen (1-2).jpg",
+      "../RECURSOS/imagen (1-3).jpg",
+      "../RECURSOS/imagen (1-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (1).mp4",
+      "../RECURSOS/video (1-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.disneyplus.com/es-es/movies/pirates-of-the-caribbean-the-curse-of-the-black-pearl/2XuO7Cc1YEau?distributionPartner=google",
+        "texto": "Disney+ (9,99€ aprox)"
+      },
+      {
+        "url": "https://www.youtube.com/results?sp=mAEB&search_query=piratas+del+caribe+y+la+maldici%C3%B3n+de+la+perla+negra",
+        "texto": "YouTube (3,99€)"
+      },
+      {
+        "url": "https://www.rakuten.tv/es/?content_id=piratas-del-caribe-1-la-maldicion-de-la-perla-negra&content_type=movies&from=gmaction&uuid=400",
+        "texto": "Rakuten (3,99€)"
+      },
+      {
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.c0bb3335-7183-f69d-4246-c5930bfc28c4?autoplay=0&ref_=atv_cf_strg_wb",
+        "texto": "Prime Video (2,99€)"
+      },
+      {
+        "url": "https://tv.apple.com/es/movie/piratas-del-caribe-la-maldicion-de-la-perla-negra/umc.cmc.1wsvf8g54wi5yhum7spxmh470",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula2": {
+    "nombre": "Protegidos por su enemigo",
+    "descripcion": "Una pareja joven recién casada se muda a la casa de sus sueños en California. Allí comenzarán a tener problemas con un policía no muy contento con el hecho de que ella sea negra y el blanco.\nFecha de estreno: 19 de septiembre de 2008 (Estados Unidos)\nDirector: Neil LaBute\nPresupuesto: 20 millones USD\nAño: 2008\nRecaudación: $44 653 637; (Internacional)​",
+    "reseñas": [
+      {
+        "usuario": "CineLover88",
+        "comentario": "Una historia cautivadora que te mantiene al borde del asiento.",
+        "valoracion": 4
+      },
+      {
+        "usuario": "FilmeFanatic",
+        "comentario": "Excelente trama y actuaciones destacadas. Muy recomendable.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "MovieGeek23",
+        "comentario": "Una película intrigante con una atmósfera inquietante. ¡Me encantó!",
+        "valoracion": 5
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (2).jpg",
+      "../RECURSOS/imagen (2-1).jpg",
+      "../RECURSOS/imagen (2-2).jpg",
+      "../RECURSOS/imagen (2-3).jpg",
+      "../RECURSOS/imagen (2-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (2).mp4",
+      "../RECURSOS/video (2-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.netflix.com/watch/70098896?source=35",
+        "texto": "Netflix (13,99€)"
+      },
+      {
+        "url": "https://www.youtube.com/results?sp=mAEB&search_query=protegidos+por+su+enemigo",
+        "texto": "YouTube (2,99€)"
+      },
+      {
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.82a9f7c1-0507-5312-95fd-759ebee08888?autoplay=0&ref_=atv_cf_strg_wb",
+        "texto": "Prime Video (2,99€)"
+      },
+      {
+        "url": "https://tv.apple.com/es/movie/lakeview-terrace/umc.cmc.ny90rwqcsood3wkn4gxuxbf3",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula3": {
+    "nombre": "El Contable",
+    "descripcion": "El contable es una película de thriller y acción estadounidense de 2016, dirigida por Gavin O'Connor y escrita por Bill Dubuque. La historia sigue a Christian Wolff (Ben Affleck), un erudito de las matemáticas con autismo de alto funcionamiento que trabaja como contable para organizaciones criminales de todo el mundo. Bajo la tapadera de una gestoría en un pequeño pueblo, Wolff lleva una doble vida: por las mañanas es un tranquilo contable, y por las noches se convierte en un peligroso asesino al servicio de las organizaciones más peligrosas. Cuando se le asigna un cliente legítimo, una empresa de robótica donde una secretaria de contabilidad (Anna Kendrick) ha descubierto una discrepancia millonaria, Wolff se ve envuelto en una trama que pone en peligro su vida y la de quienes lo rodean. Fecha de estreno: 14 de octubre de 2016. Director: Gavin O'Connor. Presupuesto: 44 millones USD.",
+    "reseñas": [
+      {
+        "usuario": "CineManiac92",
+        "comentario": "¡Una película espectacular! 🤯 La actuación de Ben Affleck es impresionante.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "ActionLover_88",
+        "comentario": "Acción, suspenso y un guion increíble. ¡Una obra maestra! 🎬💥",
+        "valoracion": 4
+      },
+      {
+        "usuario": "FilmBuff_45",
+        "comentario": "La trama es compleja pero atrapante. Necesitas verla más de una vez para captar todos los detalles. 🤔👌",
+        "valoracion": 5
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (3).jpg",
+      "../RECURSOS/imagen (3-1).jpg",
+      "../RECURSOS/imagen (3-2).jpg",
+      "../RECURSOS/imagen (3-3).jpg",
+      "../RECURSOS/imagen (3-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (3).mp4",
+      "../RECURSOS/video (3-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.netflix.com/watch/80071227?source=35",
+        "texto": "Netflix (13,99€)"
+      },
+      {
+        "url": "https://www.rakuten.tv/es/?content_id=el-contable&content_type=movies&from=gmaction&uuid=44965",
+        "texto": "Rakuten (3,99€)"
+      },
+      {
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.68abfd00-8e39-96b6-39ab-5174ac4095d7?autoplay=0&ref_=atv_cf_strg_wb",
+        "texto": "Prime Video (3,99€)"
+      },
+      {
+        "url": "https://tv.apple.com/es/movie/the-accountant-2016/umc.cmc.6bgpmgz76x46tw3qd1jlsj1mm",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula4": {
+    "nombre": "Indiana Jones y el Dial del Destino",
+    "descripcion": "Indiana Jones y el Dial del Destino es una película de aventuras y acción estadounidense de 2023, dirigida por James Mangold y escrita por Jez Butterworth, John-Henry Butterworth y James Mangold. En esta entrega, el arqueólogo Indiana Jones (Harrison Ford) se embarca en una nueva aventura para recuperar un dial legendario que puede alterar el curso de la historia. Acompañado por su ahijada Helena Shaw (Phoebe Waller-Bridge), se enfrenta a Jürgen Voller (Mads Mikkelsen), un astrofísico alemán que busca el artefacto para los nazis. La película se estrenó el 30 de junio de 2023 en Estados Unidos y el 28 de junio de 2023 en España. El presupuesto de producción fue de 295 millones de dólares.​",
+    "reseñas": [
+      {
+        "usuario": "CineFan_2023",
+        "comentario": "Una despedida épica para Indiana Jones. Harrison Ford brilla una vez más en su icónico papel.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "AventureroX",
+        "comentario": "Una película entretenida con acción y nostalgia. Aunque la trama es predecible, es un buen cierre para la saga.",
+        "valoracion": 3
+      },
+      {
+        "usuario": "Cinephile_89",
+        "comentario": "No es la mejor de la saga, pero aún así es una aventura divertida. Harrison Ford sigue siendo el alma del personaje.😁😁",
+        "valoracion": 4
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (4).jpg",
+      "../RECURSOS/imagen (4-1).jpg",
+      "../RECURSOS/imagen (4-2).jpg",
+      "../RECURSOS/imagen (4-3).jpg",
+      "../RECURSOS/imagen (4-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (4).mp4",
+      "../RECURSOS/video (4-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.disneyplus.com/es-es",
+        "texto": "Disney+ (9,99€ aprox)"
+      },
+      {
+        "url": "https://www.youtube.com/results?sp=mAEB&search_query=indiana+jones+y+el+dial+del+destino",
+        "texto": "YouTube (3,99€)"
+      },
+      {
+        "url": "https://www.rakuten.tv/es/?content_id=indiana-jones-y-el-dial-del-destino&content_type=movies&from=gmaction&uuid=176838",
+        "texto": "Rakuten (3,99€)"
+      },
+      {
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.2822327d-ff22-4cff-b033-fcae62180e5f?autoplay=0&ref_=atv_cf_strg_wb",
+        "texto": "Prime Video (3,99€)"
+      },
+      {
+        "url": "https://tv.apple.com/es/movie/indiana-jones-and-the-dial-of-destiny/umc.cmc.714d3nm84hciczsg45iygbbdn",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula5": {
+    "nombre": "Kraven el Cazador",
+    "descripcion": "Es la historia sobre cómo y por qué uno de los más icónicos villanos de Marvel llegó a serlo. Kraven (Aaron Taylor-Johnson) es un hombre cuya compleja relación con su despiadado padre, Nikolai Kravinoff (Russell Crowe), le hace emprender un camino de venganza con brutales consecuencias, motivándole a convertirse no sólo en el mejor cazador del mundo, sino también en uno de los más temidos.",
+    "reseñas": [
+      {
+        "usuario": "PixelNomad",
+        "comentario": "¡Una montaña rusa de emociones! 🎢 Me hizo reír y llorar.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "LunarEclipse91",
+        "comentario": "Bastante promedio, aunque tiene momentos memorables.",
+        "valoracion": 2
+      },
+      {
+        "usuario": "ShadowHunterX",
+        "comentario": "No entiendo por qué a todos les gusta tanto. Es aburrida.",
+        "valoracion": 1
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (5).jpg",
+      "../RECURSOS/imagen (5-1).jpg",
+      "../RECURSOS/imagen (5-2).jpg",
+      "../RECURSOS/imagen (5-3).jpg",
+      "../RECURSOS/imagen (5-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (5).mp4",
+      "../RECURSOS/video (5-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.primevideo.com/-/es/detail/Kraven-El-Cazador/0KT71XY3ZNIG80DAKIOUV7UGTV",
+        "texto": "Prime Video (16,99)"
+      },
+      {
+        "url": "https://tv.apple.com/us/movie/kraven-el-cazador/umc.cmc.24on06t6758phqiu38vgwuxvf?l=es-MX",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula6": {
+    "nombre": "Moana 2",
+    "descripcion": "‘Vaiana 2’ reúne a Vaiana y Maui tres años después en un nuevo y emocionante viaje junto a una tripulación de insólitos marineros. Tras recibir una inesperada llamada de sus antepasados, Vaiana debe viajar a los lejanos mares de Oceanía y adentrarse en peligrosas aguas perdidas desde hace mucho tiempo para vivir una aventura sin precedentes.​",
+    "reseñas": [
+      {
+        "usuario": "NovaDrifter",
+        "comentario": "La historia es confusa, pero las actuaciones salvan la película.",
+        "valoracion": 3
+      },
+      {
+        "usuario": "MysticFlame",
+        "comentario": "Me encantó el villano. Muy bien desarrollado. 😈",
+        "valoracion": 4
+      },
+      {
+        "usuario": "TurboPanda77",
+        "comentario": "Mucho ruido y pocas nueces. 😒",
+        "valoracion": 1
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (6).jpg",
+      "../RECURSOS/imagen (6-1).jpg",
+      "../RECURSOS/imagen (6-2).jpg",
+      "../RECURSOS/imagen (6-3).jpg",
+      "../RECURSOS/imagen (6-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (6).mp4",
+      "../RECURSOS/video (6-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.disneyplus.com/es-es/movies/moana-2/63iJerTm3znF",
+        "texto": "Disney+ (9,99€ aprox)"
+      },
+      {
+        "url": "https://tv.apple.com/us/movie/moana-2/umc.cmc.6a0vv8bp0aa4fij9rn6fak8lt?l=es-MX",
+        "texto": "Apple TV (9,99€ Proximamente)"
+      }
+    ]
+  },
+  "pelicula7": {
+    "nombre": "Don't Move",
+    "descripcion": "No te muevas —en inglés: Don't Move— es una película de suspenso estadounidense de 2024 protagonizada por Kelsey Chow, Finn Wittrock, Moray Treadwell y Daniel Francis. Fue dirigida por Adam Schindler y Brian Netto, y escrita por TJ Cimfel y David White. Netflix lanzó la película el 25 de octubre de 2024.",
+    "reseñas": [
+      {
+        "usuario": "ThunderEcho",
+        "comentario": "Tiene un poco de todo. ¡Muy equilibrada!",
+        "valoracion": 3
+      },
+      {
+        "usuario": "CrystalVortex",
+        "comentario": "La dirección artística es impresionante. 🎭",
+        "valoracion": 2
+      },
+      {
+        "usuario": "Meth",
+        "comentario": "El doblaje fue un desastre.",
+        "valoracion": 1
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (1).jpg",
+      "../RECURSOS/imagen (1-1).jpg",
+      "../RECURSOS/imagen (1-2).jpg",
+      "../RECURSOS/imagen (1-3).jpg",
+      "../RECURSOS/imagen (1-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (1).mp4",
+      "../RECURSOS/video (1-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.netflix.com/title/81767564",
+        "texto": "Netflix (13,99€)"
+      }
+    ]
+  },
+  "pelicula8": {
+    "nombre": "Polar Express",
+    "descripcion": "Es Navidad, y un niño intenta oír el tintineo de las campanillas del trineo de Santa Claus. A sólo cinco minutos para la medianoche, un ruido sobresalta al muchacho: un reluciente tren negro frena frente a su casa para llevarlo al Polo Norte.​",
+    "reseñas": [
+      {
+        "usuario": "CyberSamurai",
+        "comentario": "Los paisajes son lo mejor. 🌄",
+        "valoracion": 5
+      },
+      {
+        "usuario": "AstroNomad",
+        "comentario": "Un viaje emocional increíble.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "VelvetDagger",
+        "comentario": "El final es lo mejor de toda la película.",
+        "valoracion": 5
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (8).jpg",
+      "../RECURSOS/imagen (8-1).jpg",
+      "../RECURSOS/imagen (8-2).jpg",
+      "../RECURSOS/imagen (8-3).jpg",
+      "../RECURSOS/imagen (8-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (8).mp4",
+      "../RECURSOS/video (8-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "ur": "https://auth.max.com/product?_referrer=eyJlbGVtZW50IjoiQnV0dG9uIiwic2NyZWVuTmFtZSI6IkhvbGEgZGUgbnVldm8gfCBNYXgiLCJzY3JlZW5VUkkiOiJodHRwczovL3d3dy5tYXguY29tL2VzL2VzL2xhcHNlZCIsImxvY2F0aW9uIjoiT3RoZXIvSG9sYSBkZSBudWV2byB8IE1heHxiYW5kfDMzOTk3MiIsImxvY2F0aW9uUG9zaXRpb24iOjAsInRhcmdldFRleHQiOiJWT0xWRVIgQSBNQVgifQ%3D%3D",
+        "texto": "Max (9,99€ aprox)"
+      },
+      {
+        "url": "https://www.movistarplus.es/cine/polar-express/ficha?tipo=E&id=453852&origin=GGL",
+        "texto": "Movistar+ (9,99€ aprox)"
+      },
+      {
+        "url": "https://www.disneyplus.com/es-es/movies/protegidos-enemigo/123456",
+        "texto": "Disney+ (9,99€ aprox)"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=kM0UDCesb38&pp=ygUNcG9sYXIgZXhwcmVzcw%3D%3D",
+        "texto": "YouTube (3,99€)"
+      },
+      {
+        "url": "https://www.netflix.com/watch/70011200?source=35",
+        "texto": "Netflix (13,99€)"
+      },
+      {
+        "url": "https://www.rakuten.tv/es/?content_id=polar-express&content_type=movies&from=gmaction&uuid=753",
+        "texto": "Rakuten (3,99€)"
+      },
+      {
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.71df62ca-d7a1-4626-aa07-27836d37e8d9?autoplay=0&ref_=atv_cf_strg_wb",
+        "texto": "Prime Video (3,99€ o Suscripción Max)"
+      },
+      {
+        "url": "https://tv.apple.com/es/movie/the-polar-express/umc.cmc.1uo8voy8hptp3q329p7o74cg5",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula9": {
+    "nombre": "Avengers: Infinity War",
+    "descripcion": "El poderoso Thanos, decidido a hacerse con las Gemas del Infinito para controlar el universo, ataca la nave en la que huyen los supervivientes de Asgard. Su intención es hacerse con la segunda de las gemas, ahora en manos de Loki.",
+    "reseñas": [
+      {
+        "usuario": "EpicVoyage",
+        "comentario": "La trama se siente un poco reciclada.",
+        "valoracion": 2
+      },
+      {
+        "usuario": "BlazeOrbit",
+        "comentario": "No me gustó tanto como esperaba.",
+        "valoracion": 1
+      },
+      {
+        "usuario": "AironMan_HazMeUn_Hijo",
+        "comentario": "OJO! Esto es solo para frikis de Marvel.",
+        "valoracion": 5
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (9).jpg",
+      "../RECURSOS/imagen (9-1).jpg",
+      "../RECURSOS/imagen (9-2).jpg",
+      "../RECURSOS/imagen (9-3).jpg",
+      "../RECURSOS/imagen (9-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (9).mp4",
+      "../RECURSOS/video (9-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://www.disneyplus.com/es-es/movies/marvel-studios-avengers-infinity-war/1WEuZ7H6y39v?distributionPartner=google",
+        "texto": "Disney+ (9,99€ aprox)"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Q1JilksfBvQ&pp=ygUVYXZlbmdlcnMgaW5maW5pdHkgd2Fy",
+        "texto": "YouTube (3,99€)"
+      },
+      {
+        "url": "https://www.rakuten.tv/es/?content_id=vengadores-infinity-war&content_type=movies&from=gmaction&uuid=59463",
+        "texto": "Rakuten (3,99€)"
+      },
+      {
+        "url": "https://www.primevideo.com/dp/amzn1.dv.gti.4eb68101-2b5a-bd28-b375-e926f4b5a8be?autoplay=0&ref_=atv_cf_strg_wb",
+        "texto": "Prime Video (3,99€)"
+      },
+      {
+        "url": "https://tv.apple.com/es/movie/avengers-infinity-war/umc.cmc.2do0xuo1u4tjmqbfz1p42a0p9",
+        "texto": "Apple TV (9,99€)"
+      }
+    ]
+  },
+  "pelicula10": {
+    "nombre": "Flow",
+    "descripcion": "Un gato se encuentra en un mundo cubierto de agua, sin aparente rastro humano. En la búsqueda de refugio, se une a un barco con animales de otras especies. Llevarse bien con ellos resulta ser un reto aún mayor que superar su miedo al agua. A lo largo de esta aventura, tendrán que demostrar su valentía y superar sus diferencias para adaptarse a la nueva situación.",
+    "reseñas": [
+      {
+        "usuario": "GatitoCurioso",
+        "comentario": "Un cortometraje muy bonito y emotivo.",
+        "valoracion": 5
+      },
+      {
+        "usuario": "OjoOrbitador",
+        "comentario": "No me lo esperaba llore como un bebé.😭😿",
+        "valoracion": 5
+      },
+      {
+        "usuario": "Kuro",
+        "comentario": "No se que decir, hola mama!! Quiero un gato. 😻",
+        "valoracion": 5
+      }
+    ],
+    "imagenes": [
+      "../RECURSOS/imagen (10).jpg",
+      "../RECURSOS/imagen (10-1).jpg",
+      "../RECURSOS/imagen (10-2).jpg",
+      "../RECURSOS/imagen (10-3).jpg",
+      "../RECURSOS/imagen (10-4).jpg"
+    ],
+    "videos": [
+      "../RECURSOS/video (10).mp4",
+      "../RECURSOS/video (10-1).mp4"
+    ],
+    "enlaces": [
+      {
+        "url": "https://segovia.artesiete.es/Session/13/ARTESIETE%20Segovia/15212/FLOW,%20UN%20MUNDO%20QUE%20SALVAR/26007",
+        "texto": "Artesiete (5,5€)"
+      },
+      {
+        "url": "https://odeonmulticines.com/odeon-tres-cantos/sesion?pid=1390232&sesion=43128",
+        "texto": "Odeon Multicines (5,5€ aprox)"
+      },
+      {
+        "url": "https://yelmocines.es/cartelera/madrid",
+        "texto": "Yelmo Cines (11,9€ aprox)"
+      },
+      {
+        "url": "https://kinepolis.es/movies/detail/34885/HO00005560/0/silent-movie-flow-un-mundo-que-salvar",
+        "texto": "Kinepolis (11,9€ aprox)"
+      },
+      {
+        "url": "https://www.cinesa.es/peliculas/flow-un-mundo-que-salvar/HO00001896/",
+        "texto": "Cinesa (7,9€ aprox)"
+      }
+    ]
+  }
+}

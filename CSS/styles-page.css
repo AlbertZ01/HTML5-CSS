@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main container */
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  /* Flex container for two columns */
+  gap: 1rem;
+  /* Space between columns */
+  flex-wrap: wrap;
+  /* Allow items to wrap in smaller screens */
+}
+
+#contenidoPelicula {
+  display: table;
+}
+
+#elementosIzquierda,
+#elementosDerecha {
+  flex: 1 1 45%;
+  /* Each column takes 45% width, adjust this if needed */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#elementosIzquierda {
+  float: left;
+  width: 40%;
+}
+
+#elementosDerecha {
+  float: right;
+  width: 60%;
+  height: fit-content;
+}
+
+/* Estilo para los contenedores internos */
+#reseñas,
+#nombrePelicula,
+#descripcionPelicula,
+#compartirReseña,
+#enlaces {
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.usuario-reseña {
+  font-size: 2vh !important;
+}
+
+#nombrePelicula {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 700;
+  font-size: 3vw;
+  text-align: center;
+  text-shadow: 3px 2px 1px #8b8b8b;
+}
+
+#imagenesPelicula {
+  width: 100%;
+  align-content: center;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  height: 100%;
+  /* Asegura que el contenedor tenga altura para centrar verticalmente */
+  box-sizing: border-box;
+  /* Incluye el padding en las dimensiones del contenedor */
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Centra las imágenes dentro del carrusel */
+  align-items: center;
+  /* Centra las imágenes dentro del carrusel */
+  position: relative;
+  width: 100%;
+  /* Asegura que el carrusel ocupe todo el ancho disponible */
+}
+
+.carousel-item {
+  max-width: 100%;
+  /* Asegura que las imágenes no se salgan de su contenedor */
+  max-height: 400px;
+  /* Puedes ajustar la altura según tus necesidades */
+  margin: 0 0px;
+  /* Añade un pequeño margen entre las imágenes */
+  display: block;
+  /* Asegura que las imágenes se muestren como bloque */
+  object-fit: contain;
+  /* Hace que las imágenes se ajusten dentro del contenedor sin distorsionarse */
+}
+
+/* Carrusel */
+.media-wrapper * {
+  border-radius: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  /* Agregado para alinear elementos horizontalmente */
+  justify-content: center;
+  /* Centrar los elementos */
+  align-items: center;
+  /* Asegura que los elementos estén a la misma altura */
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: fit-content !important;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.carousel-arrow.left {
+  margin-left: 15px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  align-content: center;
+  background-color: #D3FFB8;
+  position: sticky !important;
+  right: 100%;
+}
+
+.carousel-arrow.right {
+  margin-right: 15px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  align-content: center;
+  background-color: #D3FFB8;
+  position: sticky !important;
+  left: 100%;
+}
+
+/* Buttons inside the carousel container */
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  opacity: 1;
+}
+
+/* Reviews Section */
+#reseñas {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.reseña-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+.reseña-item strong {
+  display: block;
+  font-weight: bold;
+}
+
+.ver-mas-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 70%;
+}
+
+.ver-mas-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
+  }
+  /* Make columns stack on smaller screens */
+  main {
+    flex-direction: column;
+    gap: 1rem;
+    /* Reduce gap when stacking */
+  }
+  #elementosIzquierda,
+  #elementosDerecha {
+    flex: 1 1 100%;
+    /* Stack the columns on small screens */
+  }
+}
+@media (max-width: 1300px) {
+  #logo {
+    width: 20%;
+  }
+  #nombre {
+    width: 60%;
+  }
+  #navegacion {
+    width: 20%;
+  }
+  .icon {
+    width: 50px;
+  }
+}
+@media (max-width: 770px) {
+  #contenidoPelicula {
+    display: -webkit-box !important;
+  }
+  #logo {
+    width: 20%;
+  }
+  #logo img {
+    width: 100%;
+    height: 20%;
+  }
+  #nombre * {
+    padding-left: 10px;
+    text-align: left;
+  }
+  #nombre {
+    width: 30%;
+  }
+  #navegacion {
+    width: 50%;
+  }
+  .icon {
+    width: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .icon {
+    width: 40px;
+  }
+  #nombre * {
+    text-align: left;
+  }
+  #logo {
+    width: 20%;
+  }
+  .carousel-buttons button {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=styles-page.css.map */
