@@ -86,6 +86,19 @@ main {
   text-shadow: 3px 2px 1px #8b8b8b;
 }
 
+#imagenesPelicula img {
+  height: 100% !important;
+  border-radius: 10px;
+  width: 100% !important;
+  align-self: center;
+  justify-content: center;
+}
+
+#imagenesPelicula video {
+  border-radius: 10px;
+  height: 100% !important;
+}
+
 #imagenesPelicula {
   width: 100%;
   align-content: center;
@@ -119,7 +132,7 @@ main {
 .carousel-item {
   max-width: 100%;
   /* Asegura que las imágenes no se salgan de su contenedor */
-  max-height: 400px;
+  max-height: 100%;
   /* Puedes ajustar la altura según tus necesidades */
   margin: 0 0px;
   /* Añade un pequeño margen entre las imágenes */
@@ -132,6 +145,7 @@ main {
 /* Carrusel */
 .media-wrapper * {
   border-radius: 10px;
+  width: 100%;
 }
 
 .carousel-container {
@@ -155,13 +169,13 @@ main {
   width: fit-content !important;
   transition: transform 0.5s ease;
   width: 100%;
+  height: 580px;
 }
 
 .carousel-item {
   flex: 0 0 100%;
-  display: block;
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .carousel-item img {

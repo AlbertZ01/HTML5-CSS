@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #000000;
+            display: inline-block;
+            position: relative;
+            background-color: #D3FFB8;
+            border-radius: 10px;
+        }
+
+        .header h1::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            bottom: 0;
+            left: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-container h3 {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-container input {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            padding: 12px;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            background-color: #D3FFB8; /* Cambié el color del botón */
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            width: 100%;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #a8e089;
+        }
+
+        .form-container .text-center {
+            text-align: center;
+        }
+
+        .form-container .text-center a {
+            color: #4bb906;
+            text-decoration: none;
+        }
+
+        .form-container .text-center a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Registro de Usuario</h1>
+    </header>
+
+    <div class="form-container">
+        <h3>Crea una cuenta</h3>
+
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" id="correo" class="form-control" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="mb-3">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <input type="password" id="contrasena" class="form-control" placeholder="Tu contraseña" required>
+            </div>
+            <div class="mb-3">
+                <label for="confirmar-contrasena" class="form-label">Confirmar contraseña</label>
+                <input type="password" id="confirmar-contrasena" class="form-control" placeholder="Confirma tu contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 A&Z Films | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
