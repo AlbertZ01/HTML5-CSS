@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
-  const peliculaId = urlParams.get('index'); // Obtener el 'index' del query string
+  const peliculaId = urlParams.get('index');
 
   if (peliculaId) {
     fetch('../JAVASCRIPT/peliculas.json')
@@ -49,11 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             for (let i = 1; i <= 5; i++) {
               const estrella = document.createElement('img');
-              estrella.src = '../RECURSOS/star.png'; // Ruta de la imagen de la estrella
+              estrella.src = '../RECURSOS/star.png'; 
               estrella.alt = 'Estrella';
               estrella.classList.add('estrella');
-              estrella.style.opacity = i <= reseña.valoracion ? '1' : '0.5'; // Opacas según la valoración
-              estrella.style.width = '20px'; // Ajustar tamaño si es necesario
+              estrella.style.opacity = i <= reseña.valoracion ? '1' : '0.5';
+              estrella.style.width = '20px';
               estrella.style.height = '20px';
               estrellasContainer.appendChild(estrella);
             }
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const comentarioCompleto = document.createElement('p');
             comentarioCompleto.textContent = reseña.comentario;
-            comentarioCompleto.style.display = 'none'; // Oculto inicialmente
+            comentarioCompleto.style.display = 'none';
 
             const verMasButton = document.createElement('button');
             verMasButton.textContent = 'Ver más';

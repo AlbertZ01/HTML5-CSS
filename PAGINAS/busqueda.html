@@ -109,14 +109,12 @@
             <div>
                 <h2>Resultados de la Búsqueda</h2>
                 <div id="resultados">
-                    <!-- Los resultados de la búsqueda aparecerán aquí -->
                 </div>
             </div>
 
             <div>
                 <h2>Carteleras</h2>
                 <div class="cartelera" id="cartelera">
-                    <!-- Carteles generados por JavaScript -->
                 </div>
             </div>
         </div>
@@ -186,7 +184,7 @@
         // Función de búsqueda
         function buscarPeliculas() {
             const query = busquedaInput.value.trim().toLowerCase().replace(/[^a-z0-9áéíóúñ ]/gi, "");
-            resultados.innerHTML = ""; // Limpiar resultados previos
+            resultados.innerHTML = ""; 
 
             if (query === "") {
                 resultados.innerHTML = "<p>Por favor, ingresa un término de búsqueda.</p>";

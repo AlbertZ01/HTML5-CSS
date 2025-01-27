@@ -29,11 +29,8 @@ main {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  /* Flex container for two columns */
   gap: 1rem;
-  /* Space between columns */
   flex-wrap: wrap;
-  /* Allow items to wrap in smaller screens */
 }
 
 #contenidoPelicula {
@@ -43,7 +40,6 @@ main {
 #elementosIzquierda,
 #elementosDerecha {
   flex: 1 1 45%;
-  /* Each column takes 45% width, adjust this if needed */
   padding: 1rem;
   box-sizing: border-box;
 }
@@ -106,37 +102,25 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
-  /* Centra los elementos horizontalmente */
   align-items: center;
-  /* Centra los elementos verticalmente */
   height: 100%;
-  /* Asegura que el contenedor tenga altura para centrar verticalmente */
   box-sizing: border-box;
-  /* Incluye el padding en las dimensiones del contenedor */
 }
 
 .carousel-wrapper {
   display: flex;
   justify-content: center;
-  /* Centra las imágenes dentro del carrusel */
   align-items: center;
-  /* Centra las imágenes dentro del carrusel */
   position: relative;
   width: 100%;
-  /* Asegura que el carrusel ocupe todo el ancho disponible */
 }
 
 .carousel-item {
   max-width: 100%;
-  /* Asegura que las imágenes no se salgan de su contenedor */
   max-height: 100%;
-  /* Puedes ajustar la altura según tus necesidades */
   margin: 0 0px;
-  /* Añade un pequeño margen entre las imágenes */
   display: block;
-  /* Asegura que las imágenes se muestren como bloque */
   object-fit: contain;
-  /* Hace que las imágenes se ajusten dentro del contenedor sin distorsionarse */
 }
 
 
@@ -155,11 +139,8 @@ main {
   border: 1px solid #ccc;
   border-radius: 8px;
   display: flex;
-  /* Agregado para alinear elementos horizontalmente */
   justify-content: center;
-  /* Centrar los elementos */
   align-items: center;
-  /* Asegura que los elementos estén a la misma altura */
 }
 
 .carousel-wrapper {
@@ -205,7 +186,6 @@ main {
   left: 100%;
 }
 
-/* Buttons inside the carousel container */
 .carousel-buttons {
   position: absolute;
   top: 50%;
@@ -234,7 +214,6 @@ main {
   opacity: 1;
 }
 
-/* Reviews Section */
 #reseñas {
 
   border-radius: 5px;
@@ -268,23 +247,19 @@ main {
   background-color: #0056b3;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .carousel-container {
     width: 100%;
   }
 
-  /* Make columns stack on smaller screens */
   main {
     flex-direction: column;
     gap: 1rem;
-    /* Reduce gap when stacking */
   }
 
   #elementosIzquierda,
   #elementosDerecha {
     flex: 1 1 100%;
-    /* Stack the columns on small screens */
   }
 }
 

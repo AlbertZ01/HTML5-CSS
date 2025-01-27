@@ -13,35 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
   videoOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
   videoOverlay.style.padding = '5px';
   videoOverlay.style.borderRadius = '10px';
-  videoOverlay.style.width = '80%'; // Aumenta el tamaño del contenedor
-  videoOverlay.style.height = '50%'; // Aumenta el tamaño del contenedor
+  videoOverlay.style.width = '80%';
+  videoOverlay.style.height = '50%';
 
   const overlayVideo = document.createElement('video');
   overlayVideo.id = 'overlayVideo';
   overlayVideo.controls = true;
-  overlayVideo.style.width = '100%'; // El video ocupará todo el ancho del contenedor
-  overlayVideo.style.height = '100%'; // El video ocupará todo el alto del contenedor
-  overlayVideo.style.borderRadius = '30px'; // Bordes redondeados para el video
+  overlayVideo.style.width = '100%';
+  overlayVideo.style.height = '100%';
+  overlayVideo.style.borderRadius = '30px';
 
   videoOverlay.appendChild(overlayVideo);
   document.body.appendChild(videoOverlay);
   
   // Crear el botón de cierre
   const closeButton = document.createElement('button');
-  closeButton.innerHTML = '×'; // La "X" dentro del botón
+  closeButton.innerHTML = '×';
   closeButton.id = 'closeButton';
   closeButton.style.position = 'absolute';
-  closeButton.style.top = '10px'; // Posicionar en la parte superior
-  closeButton.style.right = '10px'; // Posicionar en la parte derecha
-  closeButton.style.width = '40px'; // Ancho del botón
-  closeButton.style.height = '40px'; // Alto del botón
-  closeButton.style.backgroundColor = 'rgba(144, 238, 144, 0.6)'; // Verde claro transparente
-  closeButton.style.color = 'white'; // Color de la "X"
+  closeButton.style.top = '10px';
+  closeButton.style.right = '10px';
+  closeButton.style.width = '40px';
+  closeButton.style.height = '40px'; 
+  closeButton.style.backgroundColor = 'rgba(144, 238, 144, 0.6)';
+  closeButton.style.color = 'white';
   closeButton.style.border = 'none';
-  closeButton.style.borderRadius = '50%'; // Hacer el botón redondo
-  closeButton.style.fontSize = '24px'; // Tamaño de la "X"
-  closeButton.style.cursor = 'pointer'; // Cambiar el cursor a puntero
-  closeButton.style.transition = 'background-color 0.3s ease'; // Efecto de transición para hover
+  closeButton.style.borderRadius = '50%';
+  closeButton.style.fontSize = '24px';
+  closeButton.style.cursor = 'pointer';
+  closeButton.style.transition = 'background-color 0.3s ease'; 
 
   // Agregar el evento de cierre del video
   closeButton.addEventListener('click', () => {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     img.classList.add('tar', 'image');
     img.alt = `Imagen ${i}`;
     img.dataset.index = i;
-    img.style.cursor = 'pointer'; // Hacer que el cursor sea tipo puntero
+    img.style.cursor = 'pointer'; 
 
     // Agregar evento de clic para pasar el data-index a la URL
     img.addEventListener('click', () => {
@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
         overlayVideo.src = `./RECURSOS/video (${i}).mp4`;
         overlayVideo.play();
         videoOverlay.style.display = 'flex';
-      }, 5000); // Retraso de 5 segundos
+      }, 5000); 
     });
 
     img.addEventListener('mouseleave', () => {
-      clearTimeout(hoverTimeout); // Cancelar el retraso si el mouse sale antes de los 5 segundos
+      clearTimeout(hoverTimeout); 
     });
 
     // Agregar la imagen y el video al main
